@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pham Duc Thang</title>
+</head>
+<body>
+
+</body>
+<script>
+    let nhietdo = +prompt('Hay nhap nhiet do');
+    while (nhietdo > 100 || nhietdo < 20) {
+        if (nhietdo > 100) {
+            alert('Hay giam nhiet do')
+            nhietdo = +prompt('Hay nhap nhiet do')
+        }
+        if (nhietdo < 20) {
+            alert('Hay tang nhiet do')
+            nhietdo = +prompt('Hay nhap nhiet do')
+        }
+    }
+    alert('Nhiet do on dinh')
+    // let nhietdo = prompt('Hay nhap nhiet do');
+    // if (nhietdo > 100){
+    //     alert('Hay giam nhiet do');
+    // } else if (nhietdo < 20) {
+    //     alert('Hay tang nhiet do');
+    // }
+</script>
+</html>

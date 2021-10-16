@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game đoán số</title>
+</head>
+<body>
+
+</body>
+<script>
+    let so1 = +prompt("Nhập số đầu tiên: ")
+    let so2 = +prompt("Nhập số cuối cùng: ")
+    let somayman;
+    if (so1 > so2) {
+        somayman = Math.floor(Math.random() * (so1 - so2 + 1)) + so2;
+    } else {
+        somayman = Math.floor(Math.random() * (so2 - so1 + 1)) + so1;
+    }
+    for (let i = 0; i <= 2; i++) {
+        let number = +prompt("Nhập số dự đoán");
+        if (somayman === number) {
+            alert("Xin chúc mừng!! ")
+            break;
+        } else {
+            alert("Hãy thử lại")
+        }
+    }
+</script>
+</html>
